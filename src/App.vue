@@ -1,27 +1,22 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
-  <header class="header" style="background-color: chocolate;">
-    asdfasdf
-  </header>
-  <main class="main" style="background-color: cornflowerblue;">
-    <nav class="nav" style="background-color: lightblue;">
-      asdf
-    </nav>
-    <section class="section" style="background-color: darkcyan;">
-      <header class="location" style="background-color: lightgreen;">
-        asdfasdf
-      </header>
-      <router-view class="view"/>
-      <footer class="footer" style="background-color: lightsteelblue;">
-        1111
-      </footer>
-    </section>
-  </main>
+  <img alt="Vue logo" class="element-plus-logo" src="./assets/logo.png" />
+  <HelloWorld msg="Hello Vue 3.0 + Element Plus + Vite" />
 </template>
 
+<script setup lang="ts">
+import HelloWorld from "./components/HelloWorld.vue";
+</script>
+
 <style>
-@import url(./styles/index.css);
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+.element-plus-logo {
+  width: 50%;
+}
 </style>
